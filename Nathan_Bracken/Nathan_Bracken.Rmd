@@ -43,10 +43,10 @@ tribble(
 ```{r}
 tribble(
   ~Year, ~Type, ~Desc,
-  2020, "Economic Forecasting", "Learned how to analyze macroeconomic data and Federal Reserve anouncements.",
+  2020, "Economic Forecasting", "Learned how to analyze macroeconomic data and Federal Reserve announcements.",
   2020, "Undergraduate Econometrics", "Introduced to concepts of heteroskedasticity, autocorellation, nonstationarity and using R.",
   2021, "Economics Big Data", "Got familiar with using Git, Google Cloud, both Dplyr and data.table, and working with very large datasets.",
-  2021, "Linear Algebra I", "Introduced to the fudamentals of matrix algebra inculding row reduction, determinants, transformations, and subspaces.", 
+  2021, "Linear Algebra I", "Introduced to the fudamentals of matrix algebra including row reduction, determinants, transformations, and subspaces.", 
   2021, "Probability Theory", "Discrete and continues probability models, expected value, covariance and variance properties, jointly distributed random variables.", 
   2021, "Master's Econometrics I", "Furthered my comfort using R, linear regressions, randomized experiments, experimental design and more.", 
   2022, "Stochastic Processes", "Random Variables over time.", 
@@ -85,9 +85,9 @@ tribble(
 ```{r}
 tribble(
   ~Year, ~Name, ~Desc,
-  2018, "UO Summit Scholarship", "Awarded for good grades in highschool and high ACT score.",
+  2018, "UO Summit Scholarship", "Awarded for grades in high school and high ACT score.",
   2021, "Alanson H. Kleinsorge Economics Scholar", "Awarded to an Economics Undergraduate Student that overcame significant challenges to find success in their later years of their undergraduate studies.",
-  2021, "Departmental Honors, Economics", "Acheived a 3.6 GPA in upper division economics courses and completed research with the guidance of a professor."
+  2021, "Departmental Honors, Economics", "Achieved a 3.6 GPA in upper division economics courses and completed research with the guidance of a professor."
 ) %>% 
   brief_entries(
     glue::glue("{Name}"),
