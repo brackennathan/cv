@@ -1,0 +1,99 @@
+---
+name: Nathan
+surname: Bracken
+position: "4th Year Undergraduate Student"
+address: "1230 Ferry St. Unit 11, Eugene, Oregon 97401"
+phone: +1 949 861 1717
+profilepic: me.jpeg
+email: "nbracken@uoregon.edu"
+twitter: brackthan
+github: brackennathan
+linkedin: brackthan
+date: "`r format(Sys.time(), '%B %Y')`"
+aboutme: "Nathan is in his last year of his undergraduate studies pursuing a BSc of Economics with Minors in mathematics and business. Nathan specializes in econometrics and using R."
+output: vitae::twentyseconds
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+# About me
+
+ * I enjoy using econometrics to find correlations in data.
+ * I am interested in financial markets and the information associated with them.
+ * I enjoy the outdoors by cycling and snowboarding and I am passionate about locally sourced food.
+
+# Education
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "B.Sc. Economics, Minors Math and Business", "2018-2022", "University of Oregon", "Eugene, Oregon",
+  "High School Diploma", "2016-2018", "JSerra Catholic High School", "San Juan Capistrano, California",
+  
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+# Some Important Courses
+
+```{r}
+tribble(
+  ~Year, ~Type, ~Desc,
+  2020, "Economic Forecasting", "Learned how to analyze macroeconomic data and Federal Reserve anouncements.",
+  2020, "Undergraduate Econometrics", "Introduced to concepts of heteroskedasticity, autocorellation, nonstationarity and using R.",
+  2021, "Economics Big Data", "Got familiar with using Git, Google Cloud, both Dplyr and data.table, and working with very large datasets.",
+  2021, "Linear Algebra I", "Introduced to the fudamentals of matrix algebra inculding row reduction, determinants, transformations, and subspaces.", 
+  2021, "Probability Theory", "Discrete and continues probability models, expected value, covariance and variance properties, jointly distributed random variables.", 
+  2021, "Master's Econometrics I", "Furthered my comfort using R, linear regressions, randomized experiments, experimental design and more.", 
+  2022, "Stochastic Processes", "Random Variables over time.", 
+  2022, "Linear Algebra II", "Eigenvalues and Eigenvectors.", 
+  2022, "Master's Econometrics II", "Advanced modelling and 'Machine Learning' methods.", 
+) %>% 
+  brief_entries(
+    glue::glue("{Type}"),
+    Year,
+    Desc,
+  )
+```
+
+# Work Experience
+
+```{r}
+tribble(
+  ~Year, ~Name, ~Desc,
+  2018, "Delivery Driver, Jimmy John's", "Helped make and deliver sandwiches to people.",
+  
+  2019, "Bus Boy, Fisherman's Bar", "Cleaned tables at an extremely busy restaurant.",
+  
+  2020,"Former President, Current VP of Education, Business Operations and Technology Association, UO", "Assisting Business students with learning programming in a business context.",
+  
+  2021, "Supply Chain Analytics Intern, AbbVie", "Utilized analytics skills helping create insights into the shipping logistics of Humira, Skyrizi, Aluvia, and other drugs."
+) %>% 
+  brief_entries(
+    glue::glue("{Name}"),
+    Year, 
+    Desc
+  )
+```
+
+# Awards and Scholarships
+
+```{r}
+tribble(
+  ~Year, ~Name, ~Desc,
+  2018, "UO Summit Scholarship", "Awarded for good grades in highschool and high ACT score.",
+  2021, "Alanson H. Kleinsorge Economics Scholar", "Awarded to an Economics Undergraduate Student that overcame significant challenges to find success in their later years of their undergraduate studies.",
+  2021, "Departmental Honors, Economics", "Acheived a 3.6 GPA in upper division economics courses and completed research with the guidance of a professor."
+) %>% 
+  brief_entries(
+    glue::glue("{Name}"),
+    Year, 
+    Desc
+  )
+```
+
+

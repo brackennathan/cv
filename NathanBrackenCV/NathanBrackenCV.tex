@@ -1,0 +1,148 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 8 February 2019
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,]{moderncv}
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+
+\definecolor{color0}{rgb}{0,0,0}% black
+\definecolor{color1}{HTML}{3873B3}% custom
+\definecolor{color2}{rgb}{0.45,0.45,0.45}% dark grey
+
+\usepackage[scaled=0.86]{DejaVuSansMono}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\def\donothing#1{#1}
+\def\emaillink#1{#1}
+
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75,footskip=60pt]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+
+
+% personal data
+\name{Nathan}{Bracken}
+\title{4th Year Undergraduate Student}
+\address{1230 Ferry St.~Unit 11, Eugene, Oregon 97401}{}{}
+\phone[mobile]{+1 949 861 1717} % Phone number
+\email{\donothing{\href{mailto:nbracken@uoregon.edu}{\nolinkurl{nbracken@uoregon.edu}}}}
+\homepage{\textasciitilde{}} % Personal website
+\social[linkedin]{brackthan}
+\social[twitter]{brackthan}
+\social[github]{brackennathan}
+% \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+
+
+
+
+% Pandoc CSL macros
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[3] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+
+
+\hypertarget{about-me}{%
+\section{About me}\label{about-me}}
+
+\begin{itemize}
+\tightlist
+\item
+  I enjoy using econometrics to find correlations in data.
+\item
+  I am interested in financial markets and the information associated
+  with them.
+\item
+  I enjoy the outdoors by cycling and snowboarding and I am passionate
+  about locally sourced food.
+\end{itemize}
+
+\hypertarget{education}{%
+\section{Education}\label{education}}
+
+\nopagebreak
+    \cventry{2018-2022}{B.Sc. Economics, Minors Math and Business}{University of Oregon}{Eugene, Oregon}{}{\empty}
+    \cventry{2016-2018}{High School Diploma}{JSerra Catholic High School}{San Juan Capistrano, California}{}{\empty}
+
+\hypertarget{some-important-courses}{%
+\section{Some Important Courses}\label{some-important-courses}}
+
+\nopagebreak
+    \cvitem{2020}{Economic Forecasting. Learned how to analyze macroeconomic data and Federal Reserve anouncements.}
+    \cvitem{2020}{Undergraduate Econometrics. Introduced to concepts of heteroskedasticity, autocorellation, nonstationarity and using R.}
+    \cvitem{2021}{Economics Big Data. Got familiar with using Git, Google Cloud, both Dplyr and data.table, and working with very large datasets.}
+    \cvitem{2021}{Linear Algebra I. Introduced to the fudamentals of matrix algebra inculding row reduction, determinants, transformations, and subspaces.}
+    \cvitem{2021}{Probability Theory. Discrete and continues probability models, expected value, covariance and variance properties, jointly distributed random variables.}
+    \cvitem{2021}{Master's Econometrics I. Furthered my comfort using R, linear regressions, randomized experiments, experimental design and more.}
+    \cvitem{2022}{Stochastic Processes. Random Variables over time.}
+    \cvitem{2022}{Linear Algebra II. Eigenvalues and Eigenvectors.}
+    \cvitem{2022}{Master's Econometrics II. Advanced modelling and 'Machine Learning' methods.}
+
+\hypertarget{work-experience}{%
+\section{Work Experience}\label{work-experience}}
+
+\nopagebreak
+    \cvitem{2018}{Delivery Driver, Jimmy John's. Helped make and deliver sandwiches to people.}
+    \cvitem{2019}{Bus Boy, Fisherman's Bar. Cleaned tables at an extremely busy restaurant.}
+    \cvitem{2020}{Former President, Current VP of Education, Business Operations and Technology Association, UO. Assisting Business students with learning programming in a business context.}
+    \cvitem{2021}{Supply Chain Analytics Intern, AbbVie. Utilized analytics skills helping create insights into the shipping logistics of Humira, Skyrizi, Aluvia, and other drugs.}
+
+\hypertarget{awards-and-scholarships}{%
+\section{Awards and Scholarships}\label{awards-and-scholarships}}
+
+\nopagebreak
+    \cvitem{2018}{UO Summit Scholarship. Awarded for good grades in highschool and high ACT score.}
+    \cvitem{2021}{Alanson H. Kleinsorge Economics Scholar. Awarded to an Economics Undergraduate Student that overcame significant challenges to find success in their later years of their undergraduate studies.}
+    \cvitem{2021}{Departmental Honors, Economics. Acheived a 3.6 GPA in upper division economics courses and completed research with the guidance of a professor.}
+
+
+\end{document}
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
